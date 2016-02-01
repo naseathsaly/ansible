@@ -1,12 +1,12 @@
 [loadbalancer]
-lb01 ansible_ssh_host=10.20.30.40 ansible_ssh_user=essentials ansible_ssh_private_key_file=~/.ssh/id_rsa
+lb01 ansible_ssh_host=10.20.30.43 ansible_ssh_user=essentials ansible_ssh_private_key_file=~/.ssh/id_rsa
 
 [webserver]
-app01 ansible_ssh_host=10.20.30.40 ansible_ssh_user=essentials ansible_ssh_private_key=~/.ssh/id_rsa
-#app02 ansible_ssh_host=10.20.30.40 ansible_ssh_user=essentials ansible_ssh_private_key=~/.ssh/id_rsa
+app01 ansible_ssh_host=10.20.30.41 ansible_ssh_user=essentials ansible_ssh_private_key_file=~/.ssh/id_rsa
+app02 ansible_ssh_host=10.20.30.42 ansible_ssh_user=essentials ansible_ssh_private_key_file=~/.ssh/id_rsa
 
 [database]
-db01 ansible_ssh_host=10.20.30.40 ansible_ssh_user=essentials ansible_ssh_private_key=~/.ssh/id_rsa
+db01 ansible_ssh_host=10.20.30.44 ansible_ssh_user=essentials ansible_ssh_private_key_file=~/.ssh/id_rsa
 
 [control]
 control ansible_connection=local
